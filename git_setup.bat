@@ -1,6 +1,6 @@
 @echo off
 git init
-git remote add origin https://github.com/kumarswamynaidu09/SkillDeck-.git
+git remote add origin "https://github.com/kumarswamynaidu09/SkillDeck-.git"
 git add .
 git commit -m "Pushing SkillDeck project"
 git push -u origin main
