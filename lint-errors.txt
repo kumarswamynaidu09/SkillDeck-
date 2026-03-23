@@ -1,0 +1,70 @@
+
+> skilldeck@0.0.0 lint
+> eslint .
+
+
+c:\Users\ADMIN\Downloads\skilldeck1\skilldeck\src\api\base44Client.js
+  2:55  error  'query' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+c:\Users\ADMIN\Downloads\skilldeck1\skilldeck\src\components\decks\CompanyDeck.jsx
+  2:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u       no-unused-vars
+  7:10  error  'useNavigate' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+c:\Users\ADMIN\Downloads\skilldeck1\skilldeck\src\components\decks\SwipeDeck.jsx
+   2:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u             no-unused-vars
+  28:9   error  'navigate' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+c:\Users\ADMIN\Downloads\skilldeck1\skilldeck\src\components\editors\CertsSlideEditor.jsx
+  2:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+c:\Users\ADMIN\Downloads\skilldeck1\skilldeck\src\components\editors\EducationSlideEditor.jsx
+  2:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+c:\Users\ADMIN\Downloads\skilldeck1\skilldeck\src\components\editors\ExperienceSlideEditor.jsx
+    2:10  error    'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u                                                                                                                           no-unused-vars
+   80:9   warning  The 'experiences' logical expression could make the dependencies of useMemo Hook (at line 122) change on every render. To fix this, wrap the initialization of 'experiences' in its own useMemo() Hook  react-hooks/exhaustive-deps
+   95:14  error    'startA' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u                                                                                                                  no-unused-vars
+   96:14  error    'startB' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u                                                                                                                  no-unused-vars
+  106:30  error    'currentEnd' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u                                                                                                              no-unused-vars
+  107:16  error    'nextStart' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u                                                                                                               no-unused-vars
+
+c:\Users\ADMIN\Downloads\skilldeck1\skilldeck\src\components\editors\LanguagesSlideEditor.jsx
+  2:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+c:\Users\ADMIN\Downloads\skilldeck1\skilldeck\src\components\editors\ProfileSlideEditor.jsx
+  3:10  error  'ref' is defined but never used. Allowed unused vars must match /^[A-Z_]/u             no-unused-vars
+  3:15  error  'uploadBytes' is defined but never used. Allowed unused vars must match /^[A-Z_]/u     no-unused-vars
+  3:28  error  'getDownloadURL' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+  4:10  error  'storage' is defined but never used. Allowed unused vars must match /^[A-Z_]/u         no-unused-vars
+  4:19  error  'auth' is defined but never used. Allowed unused vars must match /^[A-Z_]/u            no-unused-vars
+
+c:\Users\ADMIN\Downloads\skilldeck1\skilldeck\src\components\editors\ProjectsSlideEditor.jsx
+  2:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+c:\Users\ADMIN\Downloads\skilldeck1\skilldeck\src\components\editors\SkillsSlideEditor.jsx
+  2:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+c:\Users\ADMIN\Downloads\skilldeck1\skilldeck\src\components\navigation\RoleSwitcher.jsx
+  2:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+c:\Users\ADMIN\Downloads\skilldeck1\skilldeck\src\pages\DeckEditorLayout.jsx
+  7:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+c:\Users\ADMIN\Downloads\skilldeck1\skilldeck\src\pages\Home.jsx
+  3:27  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+c:\Users\ADMIN\Downloads\skilldeck1\skilldeck\src\pages\Login.jsx
+   2:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+  15:25  error  'Icon' is defined but never used                                               no-unused-vars
+
+c:\Users\ADMIN\Downloads\skilldeck1\skilldeck\src\pages\Onboarding.jsx
+  3:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+c:\Users\ADMIN\Downloads\skilldeck1\skilldeck\src\pages\Profile.jsx
+  3:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+c:\Users\ADMIN\Downloads\skilldeck1\skilldeck\vite.config.js
+  10:25  error  '__dirname' is not defined  no-undef
+
+✖ 29 problems (28 errors, 1 warning)
+
