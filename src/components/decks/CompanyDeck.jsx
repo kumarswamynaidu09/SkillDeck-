@@ -38,15 +38,17 @@ export default function CompanyDeck({
 
   const handleDragEnd = (event, info) => {
     const swipeThreshold = 100;
+    const velocityThreshold = 500; // Trigger swipe on quick flicks
 
-    if (Math.abs(info.offset.x) > swipeThreshold) {
-      if (info.offset.x > 0) {
-        setExitX(1000);
-        onSwipe?.('like', company);
-      } else {
-        setExitX(-1000);
-        onSwipe?.('pass', company);
-      }
+    const isSwipeRight = info.offset.x > swipeThreshold || info.velocity.x > velocityThreshold;
+    const isSwipeLeft = info.offset.x < -swipeThreshold || info.velocity.x < -velocityThreshold;
+
+    if (isSwipeRight) {
+      setExitX(1000);
+      onSwipe?.('like', company);
+    } else if (isSwipeLeft) {
+      setExitX(-1000);
+      onSwipe?.('pass', company);
     }
   };
 
@@ -199,10 +201,14 @@ export default function CompanyDeck({
         opacity: isTop ? cardOpacity : 1,
         zIndex: 100 - stackIndex,
         scale: 1 - stackIndex * 0.05,
-        top: 0
+        top: 0,
+        touchAction: isTop ? 'none' : 'auto'
       }}
       drag={isTop ? "x" : false}
       dragConstraints={{ left: 0, right: 0 }}
+      dragElastic={0.08}
+      dragMomentum={false}
+      dragTransition={{ power: 0.2, timeConstant: 200 }}
       dragDirectionLock
       whileDrag={{ scale: 1.05, cursor: "grabbing" }}
       onDragEnd={handleDragEnd}
