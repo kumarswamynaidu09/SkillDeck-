@@ -1,18 +1,24 @@
 import React, { useState, useEffect } from 'react';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useNavigate } from 'react-router-dom';
 import BottomNav from '@/components/navigation/BottomNav';
 import { base44 } from '@/api/base44Client';
 import { db } from '@/lib/firebase';
 import { collection, query, where, onSnapshot } from 'firebase/firestore';
 
 export default function MainLayout() {
+  const navigate = useNavigate();
   const [user, setUser] = useState(null);
   const [viewMode, setViewMode] = useState('discover');
   const [incomingLikes, setIncomingLikes] = useState([]);
 
   useEffect(() => {
-    base44.auth.me().then(setUser).catch(() => {});
-  }, []);
+    base44.auth.me()
+      .then(setUser)
+      .catch(() => {
+        // Redirect to login if not authenticated or profile not found
+        navigate('/login');
+      });
+  }, [navigate]);
 
   useEffect(() => {
     if (!user) return;
