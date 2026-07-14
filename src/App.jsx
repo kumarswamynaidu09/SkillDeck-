@@ -9,6 +9,7 @@ import Home from './pages/Home';
 import Profile from './pages/Profile';
 import Matches from './pages/Matches';
 import Chat from './pages/Chat';
+import Messages from './pages/Messages';
 import ChatThread from './pages/ChatThread';
 import MainLayout from './components/layout/MainLayout';
 
@@ -52,6 +53,7 @@ function App() {
             <Route path="/profile" element={<Profile />} />
             <Route path="/matches" element={<Matches />} />
             <Route path="/chat" element={<Chat />} />
+            <Route path="/messages" element={<Messages />} />
           </Route>
 
           {/* --- NEW ROUTE (YOU MISSED THIS) --- */}

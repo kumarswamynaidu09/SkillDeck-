@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { Briefcase, Users, Zap, MessageSquare, User } from 'lucide-react';
+import { Briefcase, Users, Zap, Globe, User } from 'lucide-react';
 
 export default function BottomNav({ user, viewMode, setViewMode, incomingLikes = [] }) {
   const navigate = useNavigate();
@@ -60,6 +60,15 @@ export default function BottomNav({ user, viewMode, setViewMode, incomingLikes =
           )}
         </button>
 
+        {/* Community */}
+        <button
+          onClick={() => navigate('/chat')}
+          className={`flex flex-col items-center gap-1 transition-all ${activeTab === 'chat' ? 'text-emerald-400 transform -translate-y-1' : 'text-slate-500 hover:text-slate-300'}`}
+        >
+          <Globe className="w-5 h-5" />
+          <span className="text-[10px] font-bold tracking-wide">Community</span>
+        </button>
+
         {/* Matches */}
         <button
           onClick={() => navigate('/matches')}
@@ -67,15 +76,6 @@ export default function BottomNav({ user, viewMode, setViewMode, incomingLikes =
         >
           <Zap className="w-5 h-5" />
           <span className="text-[10px] font-bold tracking-wide">Matches</span>
-        </button>
-
-        {/* Chat */}
-        <button
-          onClick={() => navigate('/chat')}
-          className={`flex flex-col items-center gap-1 transition-all ${activeTab === 'chat' ? 'text-emerald-400 transform -translate-y-1' : 'text-slate-500 hover:text-slate-300'}`}
-        >
-          <MessageSquare className="w-5 h-5" />
-          <span className="text-[10px] font-bold tracking-wide">Chat</span>
         </button>
 
         {/* Profile */}

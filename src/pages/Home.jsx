@@ -253,7 +253,7 @@ export default function Home() {
   return (
     <div className="h-full w-full bg-gradient-to-br from-slate-950 via-emerald-950 to-slate-900 relative overflow-hidden font-sans text-white flex flex-col">
       <AnimatePresence>
-        {matchPopup && <MatchOverlay professional={matchPopup} onClose={() => setMatchPopup(null)} onChat={() => { setMatchPopup(null); navigate('/chat'); }} />}
+        {matchPopup && <MatchOverlay professional={matchPopup} onClose={() => setMatchPopup(null)} onChat={() => { setMatchPopup(null); navigate('/messages'); }} />}
 
         {showDeckModal && (
           <CreateDeckModal
