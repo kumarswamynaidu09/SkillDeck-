@@ -343,7 +343,8 @@ export default function SplashScreen() {
               Loading
             </motion.p>
           </motion.div>
-        </div>
+        </motion.div>
+      </div>
       )}
     </AnimatePresence>
   );
