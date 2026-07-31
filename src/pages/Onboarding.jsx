@@ -39,7 +39,7 @@ export default function Onboarding() {
         animate={{ opacity: 1, y: 0 }}
         className="relative z-10 max-w-md w-full"
       >
-        <h1 className="text-4xl font-bold text-white text-center mb-2">Welcome to SkillDeck</h1>
+        <h1 className="text-4xl font-bold text-white text-center mb-2">Welcome to SkillDeck Business</h1>
         <p className="text-slate-400 text-center mb-10">Choose your path to get started.</p>
 
         <div className="grid gap-4">

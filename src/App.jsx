@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 // --- EXISTING IMPORTS ---
+import SplashScreen from './pages/SplashScreen';
 import Login from './pages/Login';
 import Onboarding from './pages/Onboarding';
 import Home from './pages/Home';
@@ -44,12 +45,15 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <Router>
         <Routes>
+          {/* Splash – shown once on app open */}
+          <Route path="/" element={<SplashScreen />} />
+
           <Route path="/login" element={<Login />} />
           <Route path="/onboarding" element={<Onboarding />} />
           
           {/* Main App (Wrapped in layout with persistent bottom nav) */}
           <Route element={<MainLayout />}>
-            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/matches" element={<Matches />} />
             <Route path="/chat" element={<Chat />} />

@@ -17,19 +17,19 @@ export default function BottomNav({ user, viewMode, setViewMode, incomingLikes =
   const isRecruiter = user?.user_type === 'recruiter';
 
   const handleFeedClick = () => {
-    if (path === '/') {
+    if (path === '/home') {
       setViewMode('discover');
     } else {
-      navigate('/');
+      navigate('/home');
     }
   };
 
   const handleInterestedClick = () => {
-    if (path === '/') {
+    if (path === '/home') {
       setViewMode('applicants');
     } else {
       // Need a way to tell Home to open the applicants view, but for now navigate home
-      navigate('/'); 
+      navigate('/home'); 
     }
   };
 

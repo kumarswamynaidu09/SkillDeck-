@@ -22,7 +22,7 @@ const THREADS_DATA = {
     role: "Engineering Manager · Stripe",
     avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Alex',
     messages: [
-      { id: '1', sender: 'them', text: "Saw your profile on SkillDeck. Impressive stack!", time: "Yesterday" },
+      { id: '1', sender: 'them', text: "Saw your profile on SkillDeck Business. Impressive stack!", time: "Yesterday" },
       { id: '2', sender: 'me', text: "Thanks Alex! Stripe is doing some cool things with Elements lately.", time: "Yesterday" },
       { id: '3', sender: 'them', text: "Exactly! We're scaling the team. Interested in a coffee chat?", time: "Yesterday" },
     ]

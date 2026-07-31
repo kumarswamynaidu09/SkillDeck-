@@ -98,7 +98,7 @@ export default function OnboardingWizard() {
       setCurrentStepIndex(prev => prev + 1);
     } else {
       // Completed last step!
-      navigate('/');
+      navigate('/home');
     }
   };
 

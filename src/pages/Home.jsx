@@ -242,7 +242,7 @@ export default function Home() {
     return (
       <div className="h-full w-full bg-slate-950 flex flex-col items-center justify-center font-sans">
         <Loader2 className="w-10 h-10 text-emerald-500 animate-spin" />
-        <p className="text-emerald-500/50 mt-4 text-sm font-medium animate-pulse">Syncing SkillDeck...</p>
+        <p className="text-emerald-500/50 mt-4 text-sm font-medium animate-pulse">Syncing SkillDeck Business...</p>
       </div>
     );
   }
@@ -269,7 +269,7 @@ export default function Home() {
       {/* HEADER */}
       <div className="relative pt-4 px-6 pb-4 z-40 flex justify-between items-center max-w-md mx-auto w-full flex-none">
         <div>
-          <h1 className="text-2xl font-bold bg-gradient-to-r from-white via-emerald-200 to-green-200 bg-clip-text text-transparent theme-logo-text">SkillDeck</h1>
+          <h1 className="text-2xl font-bold bg-gradient-to-r from-white via-emerald-200 to-green-200 bg-clip-text text-transparent theme-logo-text">SkillDeck Business</h1>
           <p className="text-xs text-slate-400 font-medium tracking-wide uppercase">
             {isRecruiter ? 'Find Talent' : 'Find Work'}
           </p>
